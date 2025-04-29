@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { City } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 interface DistrictSelectorProps {
   state: string;
@@ -31,7 +31,7 @@ const DistrictSelector = ({ state, onDistrictSelect, onBack }: DistrictSelectorP
     >
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center">
-          <City className="text-mint-dark h-6 w-6 mr-3" />
+          <MapPin className="text-mint-dark h-6 w-6 mr-3" />
           <h2 className="text-xl md:text-2xl font-bold">Select District in {state}</h2>
         </div>
         <button 

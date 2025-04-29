@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { Building, Rural } from 'lucide-react';
+import { Building, TreePine } from 'lucide-react';
 
 interface AreaTypeToggleProps {
   isUrban: boolean;
@@ -47,7 +47,7 @@ const AreaTypeToggle = ({ isUrban, onToggle, onBack, onNext }: AreaTypeTogglePro
           whileTap={{ scale: 0.98 }}
           onClick={() => onToggle(false)}
         >
-          <Rural className={`w-8 h-8 ${!isUrban ? 'text-foreground' : 'text-foreground/70'}`} />
+          <TreePine className={`w-8 h-8 ${!isUrban ? 'text-foreground' : 'text-foreground/70'}`} />
           <span className="font-medium text-lg">Rural</span>
           <p className="text-sm text-foreground/70 text-center">
             Agricultural land, farms, and village properties
